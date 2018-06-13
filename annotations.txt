@@ -1,0 +1,7 @@
+Anotações dos pontos tratados no curso.
+
+- Git Merge:
+    - Ao realizar um merge, será criado um commit extra onde o git irá reorganizar as coisas em um último commit. 
+    Ele mantém o histórico das alterações. A ordem dos commit é mantida. Não é perdida a ordem cronológica em que os commits são realizados.
+    
+     
