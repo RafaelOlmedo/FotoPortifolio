@@ -3,5 +3,14 @@ Anotações dos pontos tratados no curso.
 - Git Merge:
     - Ao realizar um merge, será criado um commit extra onde o git irá reorganizar as coisas em um último commit. 
     Ele mantém o histórico das alterações. A ordem dos commit é mantida. Não é perdida a ordem cronológica em que os commits são realizados.
-    
-     
+
+# Boas Práticas - Merge / Rebase
+
+> Está atualizando sua branch pegando as coisas do master?
+    > USE REBASE (PULL --REBASE)
+
+> Terminou sua feature no branch e quer jogar para o master?
+    > USE MERGE
+    > No merge é possível saber exatamente onde determinado código foi incluído, pois
+    é criado um commit adicional.
+
