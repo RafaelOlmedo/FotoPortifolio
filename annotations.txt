@@ -14,3 +14,7 @@ Anotações dos pontos tratados no curso.
     > No merge é possível saber exatamente onde determinado código foi incluído, pois
     é criado um commit adicional.
 
+
+- Git revert: git revert <number_commit>
+    - Mantém o histórico de alteração e cria um novo commit para reverter.
+    - Deve ser utilizado para reverter algo que esteja na master, pois mantém o histórico.
