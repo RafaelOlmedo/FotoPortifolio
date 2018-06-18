@@ -1,0 +1,26 @@
+Anotações dos pontos tratados no curso.
+
+- Git Merge:
+    - Ao realizar um merge, será criado um commit extra onde o git irá reorganizar as coisas em um último commit. 
+    Ele mantém o histórico das alterações. A ordem dos commit é mantida. Não é perdida a ordem cronológica em que os commits são realizados.
+
+# Boas Práticas - Merge / Rebase
+
+> Está atualizando sua branch pegando as coisas do master?
+    > USE REBASE (PULL --REBASE)
+
+> Terminou sua feature no branch e quer jogar para o master?
+    > USE MERGE
+    > No merge é possível saber exatamente onde determinado código foi incluído, pois
+    é criado um commit adicional.
+
+
+- Git revert: git revert <number_commit>
+    - Mantém o histórico de alteração e cria um novo commit para reverter.
+    - Deve ser utilizado para reverter algo que esteja na master, pois mantém o histórico.
+
+- Git reset: Altera o histórico de commit. Não deve ser realizado na master.
+    - git reset --hard <number_commit>
+        - Volta exatamente para o commit indicado e joga fora tudo que foi feito depois. 
+    - git reset --soft <number_commit>
+        - Volta exatamente para o commit indicado, porém os arquivos alterados mantém no stage para ser adicionado como desejar.
